@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      # Build, transpile etc.
+      # Anything preparation steps you need
       - name: Build and Upload FAB to Linc
         uses: gregbrimble/linc-fab-action@v1.0.0
         with:
