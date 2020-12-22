@@ -1,0 +1,19 @@
+name: "Build and Upload a FAB to Linc"
+author: "Greg Brimble"
+description: "Build and Upload a FAB as a part of your GitHub Actions pipeline"
+inputs:
+  api_key:
+    description: "Your Linc API key"
+    required: true
+  site_name:
+    description: "Your Linc site name"
+    required: true
+  working_directory:
+    description: "The directory where package.json resides"
+    default: "/github/workspace"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "package"
+  color: "red"

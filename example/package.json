@@ -1,0 +1,18 @@
+{
+  "name": "example",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Build\"",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip"
+  },
+  "devDependencies": {
+    "@fab/actions": "^1.0.0-rc.8.p1",
+    "@fab/cli": "^1.0.0-rc.8",
+    "@fab/input-static": "^1.0.0-rc.8",
+    "@fab/plugin-render-html": "^1.0.0-rc.8",
+    "@fab/plugin-rewire-assets": "^1.0.0-rc.8",
+    "@fab/server": "^1.0.0-rc.8"
+  }
+}
